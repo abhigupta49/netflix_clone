@@ -1,4 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
 
 /*universal selector */
 *{
@@ -265,6 +284,59 @@ body{
     height: 100%;
 }
 
+/* FAQ SECTION */
+.faq_heading{
+    text-align: center;
+    
+    padding: 27px;
+}
+.faq_accordian{
+    width: 100%;
+    
+}
+.faq_title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color: white;
+    background-color: #303030;
+    border: none;
+    font-size: 18px;
+}
+
+.faq_visible{
+    border-top: 1px solid black;
+    background-color: #303030;
+    color: white;
+    /* padding: 0.2rem 1.2rem; */
+    max-height: 0;
+    overflow: hidden;
+    font-weight: 200;
+    font-size: 1.3rem;
+    font-family: 'Netflix Sans';
+    
+    transition: max-height 0.2s ease-in-out;
+
+}
+.faq_visible>p{
+    margin: 1rem;
+}
+
+.faq_container{
+    border-top: 8px solid #222;
+    padding: 2rem 0;
+}
+
+.faq_list{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 @media (min-width:768px){
     .hero_bg_img_container{
         height: 100vh;
@@ -319,7 +391,12 @@ body{
     {
         font-size: 12px;
     }
-    
+    .faq_heading{
+        font-size: 40px;
+    }
+    .faq_list{
+        padding: 1rem 5rem;
+    }
 }
 
 @media (min-width:1024px){
@@ -420,6 +497,11 @@ body{
     .poster_details>h6
     {
         font-size: 12px;
+    }
+
+    .faq_list{
+        padding: 1rem 30rem;
+        
     }
 }
 
