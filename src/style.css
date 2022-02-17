@@ -337,6 +337,57 @@ body{
     gap: 10px;
 }
 
+.faq_email_input>p{
+    text-align: center;
+    font-size: larger;
+    padding: 1rem 2rem;
+}
+
+/* FOOTER */
+footer{
+    border-top: 8px solid #222;
+    padding: 3rem 3rem;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+ul.structure{
+    padding: 0;
+    margin: 0;
+}
+ul.structure>li{
+    margin-left: 0;
+    list-style: none;
+}
+.footer-links{
+    max-width: 1000px;
+    font-size: 13px;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+.faq_list_items{
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 16px;
+    display: inline-block;
+    min-width: 100px;
+    width: 25%;
+    padding-right: 12px;
+    vertical-align: top;
+}
+.footer_link{
+    text-decoration: none;
+    color: gray;
+    
+}
+.footer_row_3>.dropdown_container{
+    width: fit-content;
+}
+
+
+
 @media (min-width:768px){
     .hero_bg_img_container{
         height: 100vh;
@@ -397,6 +448,18 @@ body{
     .faq_list{
         padding: 1rem 5rem;
     }
+    .faq_email_input>p{
+        padding: 1rem 8rem;
+        font-size: 25px;
+    }
+    .email_container{
+        width: 61%;
+        height: 4rem;
+    }
+    .footer-links{
+        font-size: 10px;
+        font-weight: 500;
+    }
 }
 
 @media (min-width:1024px){
@@ -425,14 +488,18 @@ body{
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        font-size: 20px;
+        width: 44%;
+        gap: 20px;
     }
 
     .hero_title{
-        font-size: 3.8rem;
+        font-size: 4.8rem;
     }
 
     .hero_description{
-        font-size: 1.1rem;
+        font-size: 1.5rem;
+        width: 93%;
         
     }
 
@@ -443,17 +510,17 @@ body{
     .email_btn{
         padding: 0.5rem 1.2rem;
         margin: 0px;
-        height: 4rem;
+        height: 5rem;
         width: 40%;
         border-radius: 0px;
         font-size: 1.8rem;
         
     }
     .email_label{
-        top: 33%;
+        top: 37%;
     }
     .email_container{
-        height: 4rem;
+        height: 5rem;
         width: 70%;
     }
     .feature{
@@ -502,6 +569,38 @@ body{
     .faq_list{
         padding: 1rem 30rem;
         
+    }
+
+    .faq_title{
+        padding: 22px 26px;
+        font-size: 31px;
+    }
+
+    .faq_visible{
+        max-height: 0rem;
+        font-size: 2rem;
+    }
+    .faq_email_input{
+        padding: 0 32rem;
+    }
+    .faq_email_input>p{
+        font-size: 24px;
+        padding: 1rem 1rem;
+    }
+
+    .footer_row_1>h4{
+        margin-left: 30%;
+        font-size: 20px;
+    }
+    ul.structure{
+        margin-left: 30%;
+        font-size: 18px;
+    }
+    .footer_row_3{
+        margin-left: 30%;
+    }
+    .footer_row_4>p{
+        margin-left: 30%;
     }
 }
 
